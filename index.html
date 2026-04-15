@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MediSafe AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>💊 MediSafe AI</h1>
+
+    <input type="text" id="medicineInput" placeholder="Enter Medicine">
+    <input type="time" id="timeInput">
+    <button onclick="addMedicine()">Add</button>
+
+    <h3>Your Medicines</h3>
+    <ul id="medicineList"></ul>
+
+    <button class="check" onclick="checkInteractions()">Check Interactions</button>
+    <p id="result"></p>
+
+    <hr>
+
+    <h3>🤖 Ask AI</h3>
+    <input type="text" id="chatInput" placeholder="Ask about medicines">
+    <button onclick="askAI()">Ask</button>
+    <p id="chatResult"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
